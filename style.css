@@ -1,0 +1,129 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.flex{
+    display: flex;
+    gap: 5px;
+}
+.t-capital{
+    text-transform: capitalize;
+}
+
+.d-padding{
+    padding: 14px 0px ;
+}
+.l-padding{
+    padding: 40px 10px;
+}
+
+.container{
+    background: linear-gradient(to bottom, rgb(129, 185, 24) 50%,white 50%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wraper{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    z-index: 2;
+    
+}
+.main-img-div{
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.363);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+   
+ 
+  
+    
+}
+.main-img-div img{
+    width: 200px;
+    transition: all 1s;
+    z-index: 111;
+   
+}
+.main-img-div:hover #shoe-img{
+    transform: rotate(30deg);
+    transition: all 1s;
+}
+
+
+.back-content-box{
+    position: absolute;
+    height:100% ;
+    width: 100%;
+    background-color: rgb(129, 185, 24);
+    right: 0%;
+    z-index: 1;
+    transition: all 1s;
+    padding: 20px 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+
+}
+.back-content-box:hover~.main-img-div #shoe-img{
+    transform: rotate(30deg);
+}
+
+.wraper:hover .back-content-box{
+    right: -100%;
+    transition: all 1s;
+    
+}
+
+.c-s-size-box{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    box-shadow: inset 1px 1px 4px rgba(82, 81, 81, 0.63);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: .4s;
+    cursor: pointer;
+}
+.c-s-size-box:hover{
+    background-color: white;
+    transition: .4s;
+}
+
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price button{
+    padding: 10px 10px;
+   background-color: white;
+    border: none;
+    transition: .4s;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+.price button:hover{
+    color:  rgb(255, 255, 255);
+    transition: all .4s;
+    background-color: rgb(14, 13, 13);
+}
+
+
